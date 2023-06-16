@@ -1,13 +1,10 @@
 {
-    "name": "practically/psalm-plugin-yii2",
+    "name": "magdv/psalm-plugin-yii2",
     "description": "Psalm plugin for a better typed yii2 application",
     "type": "psalm-plugin",
-    "authors": [
-        {
-            "name": "Ade Attwood",
-            "email": "ade@practically.io"
-        }
-    ],
+    "replace": {
+        "practically/psalm-plugin-yii2": "*"
+    },
     "require": {
         "php": ">=7.1",
         "vimeo/psalm": "^4.8 || ^5.12",
