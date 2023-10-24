@@ -21,8 +21,9 @@ namespace yii\db;
  * @method array<mixed, TModel> all($db = null)
  *
  * @extends Query<TModel, TMultiple>
+ * @extends ActiveQueryInterface<TModel>
  */
-class ActiveQuery extends Query
+class ActiveQuery extends Query implements ActiveQueryInterface
 {
     /**
      * @var string|null
