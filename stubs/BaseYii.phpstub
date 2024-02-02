@@ -13,7 +13,7 @@ namespace yii;
 class BaseYii
 {
     /**
-     * @template T
+     * @template T of object
      * @param class-string<T>|array{class: class-string<T>}|callable(): T $type
      * @param array<mixed> $params
      * @return T

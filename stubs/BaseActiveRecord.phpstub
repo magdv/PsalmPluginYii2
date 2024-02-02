@@ -15,8 +15,7 @@ use yii\base\Model;
 class BaseActiveRecord extends Model implements ActiveRecordInterface
 {
     /**
-     * @template T
-     *
+     * @template-covariant T of BaseActiveRecord
      * @param class-string<T> $class
      * @param array $link
      *

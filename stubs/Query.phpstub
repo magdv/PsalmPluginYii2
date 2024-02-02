@@ -13,9 +13,9 @@ namespace yii\db;
 use yii\base\Component;
 
 /**
- * @template TModel
- * @template TMultiple
- * @method iterable<mixed, TModel> each(int $batchSize = 100, ?Connection $db = null)
+ * @template-covariant TModel
+ *
+ * @method BatchQueryResult<mixed, TModel> each(int $batchSize = 100, ?Connection $db = null)
  * @method TModel|null one($db = null)
  * @method array<mixed, TModel> all($db = null)
  */

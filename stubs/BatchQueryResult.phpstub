@@ -11,11 +11,10 @@ declare(strict_types=1);
 namespace yii\db;
 
 /**
- * @template-covariant TModel of ActiveRecord
- *
- * @method TModel|null one($db = null)
- * @method array<mixed, TModel> all($db = null)
- *
- * @extends QueryInterface<TModel>
+ * @template TKey
+ * @template-covariant TValue
+ * @implements \Iterator<TKey, TValue>
  */
-class ActiveQueryInterface extends QueryInterface {}
+class BatchQueryResult extends Component implements \Iterator
+{
+}

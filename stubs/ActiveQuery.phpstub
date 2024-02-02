@@ -11,8 +11,7 @@ declare(strict_types=1);
 namespace yii\db;
 
 /**
- * @psalm-template TModel
- * @psalm-template TMultiple
+ * @template-covariant TModel of ActiveRecord
  *
  * @property bool $asArray
  * @property bool $multiple
@@ -20,7 +19,7 @@ namespace yii\db;
  * @method TModel|null one($db = null)
  * @method array<mixed, TModel> all($db = null)
  *
- * @extends Query<TModel, TMultiple>
+ * @extends Query<TModel>
  * @implements ActiveQueryInterface<TModel>
  */
 class ActiveQuery extends Query implements ActiveQueryInterface
