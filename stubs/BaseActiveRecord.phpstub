@@ -15,11 +15,20 @@ use yii\base\Model;
 class BaseActiveRecord extends Model implements ActiveRecordInterface
 {
     /**
-     * @template-covariant T of BaseActiveRecord
-     * @param class-string<T> $class
+     * @template-covariant TModelOne of BaseActiveRecord
+     * @param class-string<TModelOne> $class
      * @param array $link
      *
-     * @return ActiveQuery<T>
+     * @return ActiveQuery<TModelOne>
      */
     public function hasOne($class, $link): ActiveQueryInterface {}
+
+    /**
+     * @template-covariant TModelMany of BaseActiveRecord
+     * @param class-string<TModelMany> $class
+     * @param array $link
+     *
+     * @psalm-return ActiveQuery<TModelMany>
+     */
+    public function hasMany($class, $link): ActiveQueryInterface {}
 }

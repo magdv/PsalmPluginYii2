@@ -18,4 +18,13 @@ namespace yii\db;
  *
  * @extends QueryInterface<TModel>
  */
-class ActiveQueryInterface extends QueryInterface {}
+class ActiveQueryInterface extends QueryInterface
+{
+    /**
+     * @param TBool $value
+     *
+     * @psalm-return TBool is true ? ActiveQuery<array> : ActiveQuery<TModel>
+     * @psalm-suppress InvalidTemplateParam
+     */
+    public function asArray($value  = true) {}
+}
