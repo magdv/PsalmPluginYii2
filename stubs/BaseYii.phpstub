@@ -10,6 +10,23 @@ declare(strict_types=1);
 
 namespace yii;
 
+/** @var float */
+const YII_BEGIN_TIME;
+/** @var string */
+const YII2_PATH;
+/** @var bool */
+const YII_DEBUG;
+/** @var string */
+const YII_ENV;
+/** @var bool */
+const YII_ENV_PROD;
+/** @var bool */
+const YII_ENV_DEV;
+/** @var bool */
+const YII_ENV_TEST;
+/** @var bool */
+const YII_ENABLE_ERROR_HANDLER;
+
 class BaseYii
 {
     /**

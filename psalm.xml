@@ -8,7 +8,16 @@
     <projectFiles>
         <directory name="src" />
     </projectFiles>
-
+    <stubs>
+        <file name="stubs/ActiveQuery.phpstub"/>
+        <file name="stubs/ActiveQueryInterface.phpstub"/>
+        <file name="stubs/ActiveRecord.phpstub"/>
+        <file name="stubs/BaseActiveRecord.phpstub"/>
+        <file name="stubs/BaseObject.phpstub"/>
+        <file name="stubs/BaseYii.phpstub"/>
+        <file name="stubs/BatchQueryResult.phpstub"/>
+        <file name="stubs/Query.phpstub"/>
+    </stubs>
     <issueHandlers>
         <LessSpecificReturnType errorLevel="info" />
 		<MoreSpecificImplementedParamType errorLevel="suppress" />
