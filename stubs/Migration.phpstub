@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright 2021 Practically.io All rights reserved
+ *
+ * Use of this source is governed by a BSD-style
+ * licence that can be found in the LICENCE file or at
+ * https://www.practically.io/copyright/
+ */
+declare(strict_types=1);
+
+namespace yii\db;
+
+use yii\base\Component;
+
+/**
+ * @method void addColumn(string $table, string $column, string|ColumnSchemaBuilder $type)
+ * @method void alterColumn(string $table, string $column, string|ColumnSchemaBuilder $type)
+ */
+class Migration extends Component implements MigrationInterface
+{
+}
