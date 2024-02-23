@@ -16,6 +16,7 @@
         <file name="stubs/BaseObject.phpstub"/>
         <file name="stubs/BaseYii.phpstub"/>
         <file name="stubs/BatchQueryResult.phpstub"/>
+        <file name="stubs/Migration.phpstub"/>
         <file name="stubs/Query.phpstub"/>
     </stubs>
     <issueHandlers>

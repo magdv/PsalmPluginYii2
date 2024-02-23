@@ -12,10 +12,9 @@ namespace yii\db;
 
 use yii\base\Component;
 
-/**
- * @method void addColumn(string $table, string $column, string|ColumnSchemaBuilder $type)
- * @method void alterColumn(string $table, string $column, string|ColumnSchemaBuilder $type)
- */
 class Migration extends Component implements MigrationInterface
 {
+    public function addColumn(string $table, string $column, string|ColumnSchemaBuilder $type): void {}
+
+    public function alterColumn(string $table, string $column, string|ColumnSchemaBuilder $type): void {}
 }
